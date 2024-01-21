@@ -1,0 +1,4 @@
+﻿  client.cpp
+C:\Users\ZhengYeFu\Desktop\性能对比\client\client\client.cpp(65,2): warning C4091: “typedef ”: 没有声明变量时忽略“Packet_Header”的左侧
+C:\Users\ZhengYeFu\Desktop\性能对比\client\client\client.cpp(599,71): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  client.vcxproj -> C:\Users\ZhengYeFu\Desktop\性能对比\client\x64\Debug\client.exe

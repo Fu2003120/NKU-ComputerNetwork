@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简介</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 视窗高度 */
+            background-color: #f3f4f6; /* 背景颜色 */
+        }
+
+        .container {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 箱子阴影 */
+            background-color: #ffffff; /* 容器背景颜色 */
+        }
+
+        /* 图片居中 */
+        .container img {
+            display: block;
+            margin: 10px auto;
+        }
+
+        /* 响应式设计：当屏幕宽度小于600px时，容器宽度为90% */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>欢迎来到我的个人简介页面</h1>
+        <p>专业：信息安全、法学</p>
+        <p>学号：2113203</p>
+        <p>姓名：付政烨</p>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="我的LOGO" width="100">
+        <audio controls>
+            <source src="{{ url_for('static', filename='intro.mp3') }}" type="audio/mpeg">
+            您的浏览器不支持音频播放。
+        </audio>
+    </div>
+</body>
+
+</html>
